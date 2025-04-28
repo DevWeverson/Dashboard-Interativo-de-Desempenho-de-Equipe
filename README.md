@@ -1,0 +1,1 @@
+Dashboard interativo e responsivo para análise de desempenho de equipes, utilizando HTML, CSS, JavaScript e gráficos dinâmicos. Desenvolvido para aplicações empresariais e demonstrações profissionais.
