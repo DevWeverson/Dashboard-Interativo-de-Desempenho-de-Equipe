@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>PTD</title>
+    </head>
+
+        <body>
+
+          <header class="cabecalho">
+            <div class="logo">Meu Dashboard</div>
+            <nav class="menu">
+              <ul>
+                <li><a href="#cards-container">Equipe</a></li>
+                <li><a href="#graficoEficiencia">Eficiência</a></li>
+                <li><a href="#graficoTarefasConcluidas">Tarefas</a></li>
+                <li><a href="#graficoEvolucao">Evolução</a></li>
+              </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </header>
+
+                    <div class="filtros">
+                        <label for="filtro-nome">Filtrar por nome:</label> <!--representa uma legenda para um item em uma interface de usuário-->
+                        <input type="text" id="filtro-nome" placeholder="Digite um nome..." /> <!--Input: inserir informações em um formulário-->
+                  
+                        <label for="filtro-eficiencia">Eficiência mínima:</label>
+                        <input type="number" id="filtro-eficiencia" placeholder="Ex: 80" min="0" max="100" />
+                    </div>
+
+                    <div class="content" id="cards-container">
+                      <!--Os cards serão inseridos aqui via JacaScript-->
+                      
+                      
+                    </div>
+                    
+                    <div id="graficos">
+
+                    <div class="grafico"> 
+                      <h2>Eficiência por Funcionário</h2>
+                      <canvas id="graficoEficiencia"></canvas>
+                    </div>
+
+                    <div class="grafico">
+                      <h2>Tarefas Concluídas por Funcionário</h2>
+                      <canvas id="graficoTarefasConcluidas"></canvas>
+                    </div>
+
+                    <div class="botoes-tempo">
+                      <button id="botao-semanal" class="ativo">Semanal</button>
+                      <button id="botao-mensal">Mensal</button>
+                      <button id="botao-anual">Anual</button>
+                    </div>
+
+                    <div class="grafico">
+                      <h2>Evolução de Eficiência</h2>
+                      <canvas id="graficoEvolucao"></canvas>
+                    </div>
+
+                  </div>
+            
+                </div>
+              </div>
+            
+              <script src="script.js"></script>
+        </body>
+</html>
